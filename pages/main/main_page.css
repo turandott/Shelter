@@ -1,0 +1,138 @@
+@import url(/home/olya/code/rs_school/shelter/Shelter/normalize.css);
+.footer {
+  background-image: url(../../../Shelter/images/footer-background.svg);
+  background-image: url(../../../Shelter/images/footer-gradient-background.svg);
+  background-size: cover;
+}
+
+.footer__content .contacts, .footer__content .adres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-text {
+  padding-left: 20px;
+  max-width: 310px;
+}
+
+.footer-puppy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 300;
+  height: 310;
+}
+
+.title {
+  color: #FFFFFF;
+  max-width: 330px;
+}
+
+.info {
+  color: #F1CDB3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .footer__content {
+    padding: 0 34px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-puppy {
+    width: 260px;
+    height: 269px;
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .adres,
+  .contacts {
+    gap: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .adres,
+  .contacts {
+    height: 230px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts {
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=main_page.css.map */
