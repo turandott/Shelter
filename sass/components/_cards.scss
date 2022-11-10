@@ -1,0 +1,63 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    width: 270px;
+    height: 435px;
+    left: 105px;
+    top: 0px;
+    background: $color-light-link;
+    border-radius: 9px;
+}
+
+.card_image {
+    padding-bottom: 25px;
+}
+
+.pet_name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    /* color-dark-l */
+    color: color-dark-grey-text;
+}
+
+.main_pets_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    /* gap: 10px;
+    width: 261px;
+    height: 52px;
+    left: 470px;
+    top: 645px; */
+    /* color-primary */
+    background: $color-peach;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 130%;
+    /* identical to box height, or 22px */
+    letter-spacing: 0.06em;
+    /* color-dark-3xl */
+    color: $color-dark-grey-link;
+}
+
+.cards_wrapper {
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 90px;
+    display: flex;
+    align-items: center;
+}

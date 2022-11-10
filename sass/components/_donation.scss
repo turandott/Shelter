@@ -1,0 +1,62 @@
+.donation {
+    height: 462px;
+    background: $color-background;
+}
+
+.donation_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.donation_dog {
+    width: 505px;
+    height: 261px;
+    padding-top: 91px;
+    padding-right: 30px;
+}
+
+.donation_title {
+    padding-top: 80px;
+    width: 330px;
+    height: 90px;
+    /* h3 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 130%;
+    /* or 45px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    /* color-dark-l */
+    color: $color-dark-grey-text;
+}
+
+.donation_text {
+    width: 330px;
+    height: 17px;
+    /* h5 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    /* color-dark-l */
+    color: $color-dark-grey-text;
+}
+
+.legal_information {
+    width: 380px;
+    height: 72px;
+    /* donation-description */
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    /* color-dark-m */
+    color: $color-donation-text;
+}

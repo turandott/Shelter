@@ -1,0 +1,28 @@
+.help_title {
+    width: 308px;
+    /* h3 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 130%;
+    /* or 45px */
+    letter-spacing: 0.06em;
+    /* color-dark-l */
+    color: $color-dark-grey-text;
+}
+
+.help_list {
+    display: flex;
+    padding-left: 127px;
+    padding-right: 127px;
+    flex-wrap: wrap;
+    /* display: grid; */
+    gap: 120px;
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 120px; */
+    justify-content: center;
+    /* grid-template-rows: repeat(9, 113px);
+    height: 281px;
+    /* width: 1026px; */
+}

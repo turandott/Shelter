@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', 'Verdana';
+}
+
+body {
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 160%;
+    font-weight: normal;
+    color: $color-about-text;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    @extend %font-add;
+    font-family: 'Georgia';
+    @include font(4.4rem, 400, 130%)
+}
+
+h3 {
+    font-family: 'Georgia';
+    @include font(3.5rem, 400, 130%)
+}
+
+h4 {
+    font-family: 'Georgia';
+    @include font(2rem, 400, 115%)
+}
+
+h5 {
+    @include font(1.5rem, 400, 110%)
+}

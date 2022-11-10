@@ -1,0 +1,35 @@
+.our_friends {
+    background-color: $color-background;
+}
+
+.cards_wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.control-slider {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.b {
+    background-color: $color-peach;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.pets_title {
+    font-size: 3.5rem;
+    padding: 80px 0 60px 0;
+    text-align: center;
+    color: $color-dark-grey-text;
+    font-family: Georgia, Times, serif;
+}

@@ -1,0 +1,45 @@
+.card_btn {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Auto layout */
+    /* align-items: center; */
+    padding: 15px 45px;
+    gap: 10px;
+    font-family: Georgia; // width: 187px;
+    // height: 52px;
+    /* color-primary */
+    background-color: $color-light-link;
+    border: 2px solid $color-peach-light;
+    border-radius: 100px;
+    &:hover {
+        background-color: $color-peach-light;
+    }
+}
+
+.peach_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    /* gap: 10px;
+    width: 261px;
+    height: 52px;
+    left: 470px;
+    top: 645px; */
+    /* color-primary */
+    background: $color-peach;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 130%;
+    /* identical to box height, or 22px */
+    letter-spacing: 0.06em;
+    /* color-dark-3xl */
+    border: none;
+    color: $color-dark-grey-link;
+    &:hover {
+        background-color: $color-peach-light;
+    }
+}

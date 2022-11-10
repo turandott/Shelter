@@ -1,0 +1,46 @@
+.start_screen_content {
+    height: 908px;
+    /* height: 100vh; */
+}
+
+.content {
+    /* flex-direction: column; */
+    /* padding-left: 31px; */
+    padding-top: 343px;
+    padding-right: 40px;
+    background-color: transparent;
+}
+
+.start_screen_title {
+    margin-bottom: 42px;
+    font-family: 'Georgia';
+    color: $color-light;
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 130%;
+}
+
+.start_screen_text {
+    /* padding-top: 42px; */
+    max-width: 460px;
+    margin-bottom: 42px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    /* color-dark-s */
+    color: $color-link;
+}
+
+.start_screen_puppy {
+    padding-top: 180px;
+    padding-right: 40px;
+    float: right;
+    background-size: cover;
+    width: 698px;
+    height: 728px;
+    bottom: 0px;
+    /* position: absolute; */
+}

@@ -1,0 +1,31 @@
+.help_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.pets {
+    background: $color-background;
+    height: 877px;
+}
+
+.pets_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+}
+
+.pets_title {
+    max-width: 400px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    /* or 45px */
+    /* color-dark-l*/
+    color: $color-dark-grey-text;
+}
