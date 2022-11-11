@@ -86,6 +86,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-items: flex-end;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .header_item {

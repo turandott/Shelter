@@ -1,4 +1,16 @@
 .wrapper {
     max-width: $content-widht;
     margin: auto;
+    @include media-laptop {
+        padding: 0 30px;
+    }
+    @include media-mobilesmall {
+        padding: 0 10px;
+    }
+}
+
+.help_item_text {
+    @include media-mobilesmall {
+        font-size: 1.5rem;
+    }
 }

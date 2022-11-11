@@ -3,14 +3,9 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: 'Open Sans', 'Verdana';
-}
-
-body {
     font-family: 'Arial';
     font-style: normal;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     line-height: 160%;
     font-weight: normal;
     color: $color-about-text;
@@ -26,7 +21,7 @@ a {
 
 h2 {
     @extend %font-add;
-    font-family: 'Georgia';
+    // font-family: 'Georgia';
     @include font(4.4rem, 400, 130%)
 }
 

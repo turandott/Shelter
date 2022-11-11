@@ -1,5 +1,18 @@
-@import "normalize.css";
-@import "pets/sass/abstract/constants";
-@import "pets/sass/abstract/mixins";
+@import "../../normalize.css";
+@import "../../sass/abstract/constants";
+@import "../../sass/abstract/placeholders";
+@import "../../sass/abstract/mixins";
+@import "../../sass/base/base";
+@import "../../sass/layouts/wrapper";
+@import "../../sass/base/buttons";
+@import "../../sass/base/hamburger";
 //
-@import "pets/sass/layout/footer"
+@import "../../sass/components/header";
+@import "../../sass/components/footer";
+@import "../../sass/components/cards";
+@import "../../sass/components/start-screen";
+@import "../../sass/components/about";
+@import "../../sass/components/help";
+@import "../../sass/components/pets";
+@import "../../sass/components/donation";
+@import "../../sass/components/our_pets";

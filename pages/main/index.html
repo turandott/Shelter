@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main_page.css">
@@ -11,62 +12,73 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper"> -->
-    <div class="header">
-        <div class="wrapper">
-            <div class="header_wrapper">
+    <div class="header-screen">
+        <!-- <div class="wrapper"> -->
+        <div class="header">
+            <div class="wrapper header_wrapper">
+                <!-- <div class="header_wrapper"> -->
                 <div class="header_logo">
-                    <a href="/" class="header_logo_link">
-                        <img src="../../assets/images/Logo.svg" alt="logo" class="header_logo_pic">
+                    <a href="/pages/main/index.html" class="header_logo_link">
+                        <h1 class="cozy-house"> Cozy House</h1>
+                        <!-- <img src="../../assets/images/Logo.svg" alt="logo" class="header_logo_pic"> -->
+                        <p class="logo-ps">Shelter for pets in Boston</p>
                     </a>
+
                 </div>
 
-                <nav class="header_nav">
-                    <ul class="header_list">
-                        <li class="header_item">
-                        </li>
-                        <a href="#!" class="header_link">About the shelter</a>
-                        <li class="header_item">
-                        </li>
-                        <a href="#!" class="header_link">Our pets</a>
-                        <li class="header_item">
-                        </li>
-                        <a href="#!" class="header_link">Help the shelter</a>
-                        <li class="header_item">
-                        </li>
-                        <a href="#!" class="header_link">Contacts</a>
-                    </ul>
-                </nav>
+                <!-- <nav class="header_nav"> -->
+                <ul class="header_list">
+                    <li class="header_item">
+                    </li>
+                    <a href="#!" class="header_link">About the shelter</a>
+                    <li class="header_item">
+                    </li>
+                    <a href="#!" class="header_link">Our pets</a>
+                    <li class="header_item">
+                    </li>
+                    <a href="#!" class="header_link">Help the shelter</a>
+                    <li class="header_item">
+                    </li>
+                    <a href="#!" class="header_link">Contacts</a>
+                </ul>
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <!-- </nav> -->
+                <!-- </div> -->
             </div>
         </div>
-    </div>
 
-    <div class="start_screen_content">
-        <div class="wrapper">
-            <div class="content_wrapper">
-                <div class="start_screen_puppy">
-                    <img src="../../assets/images/start-screen-puppy.svg">
-                </div>
-                <div class="content">
+        <div class="start_screen_content">
+            <div class="wrapper">
+                <div class="content_wrapper">
+                    <div class="content">
 
-                    <p class="start_screen_title">Not only people need a house</p>
-                    <p class="start_screen_text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="start_screen_btn">Make a friend</button>
-                    <!-- <div class="start_screen_puppy">
+                        <p class="start_screen_title">Not only people need a house</p>
+                        <p class="start_screen_text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                        <button class="peach_btn">Make a friend</button>
+                        <!-- <div class="start_screen_puppy">
                         <p> <img src="start-screen-puppy.svg" alt="puppy"></p> -->
 
 
+                        <!-- </div> -->
+                    </div>
+                    <!-- <div class="start_screen_puppy"> -->
+                    <img src="../../assets/images/start-screen-puppy.svg" class="scr-puppy">
                     <!-- </div> -->
+
                 </div>
             </div>
         </div>
+
     </div>
-
-
     <div class="abount_content">
         <div class="wrapper">
             <div class="about_content_wrapper">
-                <img src="../../assets/images/about-pets.svg" class="about_pets_image" alt="puppy and kitten">
+                <div class="about-pets">
+                    <img src="../../assets/images/about-pets.svg" class="about_pets_image" alt="puppy and kitten">
+
+                </div>
 
                 <div class="about_content_information">
                     <p class="about_title">
@@ -84,30 +96,36 @@
         <div class="wrapper">
             <div class="pets_wrapper">
                 <p class="pets_title">Our friends who are looking for a house</p>
-
-
-                <div class="cards_wrapper">
-                    <img src="../../assets/images/button_arrow_left.svg" class="row">
-                    <div class="card">
-
-                        <img src="../../assets/images/pets-katrine.svg" class="card_image">
-                        <p class="pet_name">Katrine</p>
-                        <button class="card_btn">Learn more</button>
+                <div class="cards_and_buttons">
+                    <div class="rows-right">
+                        <img src="../../assets/images/button_arrow_left.svg" class="row">
                     </div>
-                    <div class="card">
-                        <img src="../../assets/images/pets-jennifer.svg" class="card_image">
-                        <p class="pet_name">Jennifer</p>
-                        <button class="card_btn">Learn more</button>
-                    </div>
-                    <div class="card">
-                        <img src="../../assets/images/pets-woody.svg" class="card_image">
-                        <p class="pet_name">Woody</p>
-                        <button class="card_btn">Learn more</button>
-                    </div>
-                    <img src="../../assets/images/button_arrow_right.svg" class="row">
+                    <div class="cards_wrapper">
 
+                        <div class="card">
+
+                            <img src="../../assets/images/pets-katrine.svg" class="card_image">
+                            <p class="pet_name">Katrine</p>
+                            <button class="card_btn">Learn more</button>
+                        </div>
+                        <div class="card">
+                            <img src="../../assets/images/pets-jennifer.svg" class="card_image">
+                            <p class="pet_name">Jennifer</p>
+                            <button class="card_btn">Learn more</button>
+                        </div>
+                        <div class="card">
+                            <img src="../../assets/images/pets-woody.svg" class="card_image">
+                            <p class="pet_name">Woody</p>
+                            <button class="card_btn">Learn more</button>
+                        </div>
+
+                    </div>
+                    <div class="rows-left">
+                        <img src="../../assets/images/button_arrow_right.svg" class="row">
+
+                    </div>
                 </div>
-                <button class="main_pets_btn">Get to know the rest</button>
+                <button class="peach_btn">Get to know the rest</button>
             </div>
         </div>
     </div>
@@ -121,40 +139,41 @@
                 <div class="help_list">
                     <div class="help_item">
                         <img src="../../assets/images/Vector.svg" class="item_picture">
-                        <p class="help_item_text">Pet food</p>
+                        <h4 class="help_item_text">Pet food</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/transportation.svg" class="item_picture">
-                        <p class="help_item_text">Transportation</p>
+                        <h4 class="help_item_text">Transportation</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/toys.svg" class="item_picture">
-                        <p class="help_item_text">Toys</p>
+                        <h4 class="help_item_text">Toys</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/bowls-and-cups.svg" class="item_picture">
-                        <p class="help_item_text">Bowls and cups</p>
+                        <h4 class="help_item_text">Bowls and cups</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/shampoos.svg" class="item_picture">
-                        <p class="help_item_text">Shampoos</p>
+                        <h4 class="help_item_text">Shampoos
+                            <h4>
 
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/vitamins.svg" class="item_picture">
-                        <p class="help_item_text">Vitamins</p>
+                        <h4 class="help_item_text">Vitamins</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/medicines.svg" class="item_picture">
-                        <p class="help_item_text">Medicines</p>
+                        <h4 class="help_item_text">Medicines</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/collars-or-leashes.svg" class="item_picture">
-                        <p class="help_item_text">Collars / leashes</p>
+                        <h4 class="help_item_text">Collars / leashes</h4>
                     </div>
                     <div class="help_item">
                         <img src="../../assets/images/sleeping-area.svg" class="item_picture">
-                        <p class="help_item_text">Sleeping areas</p>
+                        <h4 class="help_item_text">Sleeping areas</h4>
                     </div>
                 </div>
             </div>
@@ -170,7 +189,9 @@
 
                     <p class="donation_title">You can also make a donation</p>
                     <p class="donation_text">Name of the bank / Type of bank account</p>
-                    <img src="../../assets/images/Credit card.svg" class="donation_img">
+                    <!-- <img src="../../assets/images/Credit card.svg" class="donation_img"> -->
+                    <button class="peach_btn number_btn">8380 2880  8028 </button>
+
                     <p class="legal_information">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis
                         in faucibus.</p>
                 </div>

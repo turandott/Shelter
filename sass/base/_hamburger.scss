@@ -1,0 +1,35 @@
+%hamburger-line {
+    content: "";
+    display: inline-block;
+    background: $color-peach;
+    border-radius: 2px;
+    height: 2px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.hamburger {
+    display: none;
+    // display: inline-block;
+    width: 30px;
+    height: 26px;
+    @include media-mobile {
+        display: inline-block;
+    }
+    &:before {
+        @extend %hamburger-line;
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        @extend %hamburger-line;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.hamburger__line {
+    @extend %hamburger-line;
+    top: calc(50%-1px);
+    left: 0;
+}

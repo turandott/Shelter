@@ -103,15 +103,6 @@ a {
     background-size: cover;
 }
 
-.btn {}
-
-.content_wrapper {
-    /* display: flex; */
-    /* flex-flow: row wrap; */
-    /* Then we define how is distributed the remaining space */
-    /* justify-content: space-around; */
-}
-
 .content {
     /* flex-direction: column; */
     /* padding-left: 31px; */
@@ -489,7 +480,7 @@ a {
     color: #F1CDB3;
 }
 
-.footer_dog {
+.footer_puppy {
     padding-top: 40px;
 }
 

@@ -1,37 +1,73 @@
 .abount_content {
-    min-height: 588px;
+    // min-height: 588px;
 }
 
 .about_content_wrapper {
     display: flex;
     flex-direction: row;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    @include media-tablet {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    @include media-mobilesmall {
+        padding-bottom: 42px;
+    }
     /* justify-content: space-between; */
 }
 
 .about_pets_image {
     height: 408px;
-    // width: 300px;
+    width: 300px;
+    // padding-top: 80px;
+    // padding-left: 215px;
+    // padding-right: 120px;
+    @include media-mobilesmall {
+        width: 260px;
+        height: 353px;
+    }
+}
+
+.about-pets {
     padding-top: 80px;
-    padding-left: 215px;
     padding-right: 120px;
+    @include media-tablet {
+        padding-right: 0px
+    }
+    @include media-mobilesmall {
+        padding-top: 42px;
+    }
 }
 
 .about_content_information {
     padding-top: 94px;
+    max-width: 430px;
+    @include media-tablet {
+        padding-top: 80px;
+    }
 }
 
 .about_title {
     color: $color-dark-grey-text;
     font-family: 'Georgia';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 4rem;
     font-size: 3.5rem;
     line-height: 130%;
+    width: 370px;
+    @include media-mobilesmall {
+        font-size: 2.5rem;
+        width: 270px;
+        text-align: center;
+    }
 }
 
 .about_text {
     width: 430px;
-    height: 96px;
     top: 115px;
     /* paragraph-l */
     font-family: 'Arial';
@@ -42,4 +78,9 @@
     /* or 24px */
     /* color-dark-xl */
     color: $color-about-text;
+    @include media-mobilesmall {
+        font-size: 1.5rem;
+        width: 270px;
+        text-align: justify;
+    }
 }

@@ -4,4 +4,19 @@
     grid-column-gap: 90px;
     display: flex;
     align-items: center;
+    display: flex;
+    // flex-wrap: wrap;
+}
+
+.cards_and_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.rows-right {
+    padding-right: 50px;
+}
+
+.rows-left {
+    padding-left: 50px;
 }

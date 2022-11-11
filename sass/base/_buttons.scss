@@ -5,7 +5,8 @@
     /* align-items: center; */
     padding: 15px 45px;
     gap: 10px;
-    font-family: Georgia; // width: 187px;
+    font-family: Georgia;
+    font-size: 1.7rem; // width: 187px;
     // height: 52px;
     /* color-primary */
     background-color: $color-light-link;
@@ -42,4 +43,15 @@
     &:hover {
         background-color: $color-peach-light;
     }
+}
+
+.b {
+    background-color: $color-peach;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-color: $color-peach-light;
 }
