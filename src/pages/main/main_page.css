@@ -15,6 +15,10 @@ body {
   color: #4C4C4C;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 li {
   list-style-type: none;
 }
@@ -160,6 +164,7 @@ h5 {
 
 .hamburger {
   display: none;
+  z-index: 1;
   width: 30px;
   height: 26px;
 }
@@ -183,6 +188,10 @@ h5 {
 .hamburger__line {
   top: calc(50%-1px);
   left: 0;
+}
+
+.hamburger.active {
+  rotate: 90deg;
 }
 
 .overlay {
@@ -307,6 +316,10 @@ h5 {
           flex-direction: column;
 }
 
+.header_logo {
+  z-index: 1;
+}
+
 .header-pets {
   /* display: flex; */
   background-color: #FFFFFF;
@@ -333,15 +346,34 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 414px) {
   .header_list {
-    display: none;
+    position: fixed;
+    margin-top: 150px;
+    left: 100%;
+    top: 9rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+    row-gap: 40px;
   }
+}
+
+.header_list.active {
+  left: 0;
 }
 
 .header_item {
@@ -352,7 +384,7 @@ h5 {
   margin-right: 0px;
 }
 
-.header_link:first-of-type {
+.header_item:first-of-type {
   color: color-light-link;
   /* color-primary */
   border-bottom: 3px solid #F1CDB3;
@@ -367,11 +399,22 @@ h5 {
   line-height: 160%;
 }
 
+@media (max-width: 414px) {
+  .header_link {
+    font-size: 3.2rem;
+    line-height: 160%;
+  }
+}
+
+.header.active {
+  background-color: aqua;
+}
+
 .header_link_pets {
   color: #545454;
 }
 
-.header_link_pets:nth-of-type(2) {
+.header_item_pets:nth-of-type(2) {
   /* color-primary */
   border-bottom: 3px solid #F1CDB3;
 }
@@ -380,6 +423,27 @@ h5 {
 .header_link:focus,
 .header_link:active {
   opacity: .75;
+}
+
+@media (max-width: 414px) {
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 30px 30px 30px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu__body.active {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
 }
 
 .footer {

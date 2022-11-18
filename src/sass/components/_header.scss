@@ -63,6 +63,10 @@
     flex-direction: column;
 }
 
+.header_logo {
+    z-index: 1;
+}
+
 .header-pets {
     /* display: flex; */
     // position: fixed;
@@ -84,11 +88,30 @@
 
 .header_list {
     display: flex;
-    flex-wrap: wrap;
-    justify-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+    // justify-items: flex-end;
     @include media-mobile {
-        display: none;
+        // display: none;
+        position: fixed;
+        margin-top: 150px;
+        left: 100%;
+        top: 9rem;
+        flex-direction: column;
+        // background-color: $color-dark-grey-link;
+        width: 100%;
+        // border-radius: 10px;
+        text-align: center;
+        transition: 1s;
+        row-gap: 40px;
+        // box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        // background-image: url(../../../assets/images/footer-background.svg);
     }
+}
+
+.header_list.active {
+    left: 0;
 }
 
 .header_item {
@@ -99,7 +122,7 @@
     margin-right: 0px;
 }
 
-.header_link:first-of-type {
+.header_item:first-of-type {
     color: color-light-link;
     /* color-primary */
     border-bottom: 3px solid $color-peach;
@@ -112,13 +135,21 @@
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 160%;
+    @include media-mobile {
+        font-size: 3.2rem;
+        line-height: 160%;
+    }
+}
+
+.header.active {
+    background-color: aqua;
 }
 
 .header_link_pets {
     color: $color-dark-grey-text;
 }
 
-.header_link_pets:nth-of-type(2) {
+.header_item_pets:nth-of-type(2) {
     /* color-primary */
     border-bottom: 3px solid $color-peach;
 }
@@ -127,4 +158,28 @@
 .header_link:focus,
 .header_link:active {
     opacity: .75;
+}
+
+// .header-screen.active {
+//     background-color: $color-dark-grey-link;
+//     overflow: hidden;
+// }
+@include media-mobile {
+    .header-screen.active {}
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(-100%, 0px);
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+        // background-color: $color-dark-grey-link;
+    }
+    .menu__body.active {
+        transform: translate(0px, 0px);
+    }
 }

@@ -11,6 +11,10 @@ body {
     color: $color-about-text;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 li {
     list-style-type: none;
 }
