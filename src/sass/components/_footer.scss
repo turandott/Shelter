@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
 
 .title {
@@ -25,6 +28,8 @@
 
 .info-text {
     /* h4 */
+    align-self: center;
+    padding-left: 20px;
     width: 290px;
     font-family: 'Georgia';
     font-style: normal;
@@ -40,6 +45,15 @@
 .footer_puppy {
     // padding-top: 40px;
     align-self: flex-end;
+    @include media-tablet {
+        align-self: center;
+    }
+}
+
+.footer-puppy {
+    @include media-mobilesmall {
+        width: 260px;
+    }
 }
 
 .icon_wrapper {
@@ -48,14 +62,29 @@
 }
 
 .icon {
-    padding-right: 20px;
+    align-self: center;
+    // padding-right: 20px;
     max-width: 40px;
     height: 26px;
 }
 
 .footer__info {
     /* display: grid; */
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     // flex-direction: column;
     // justify-content: center;
+    @include media-mobilesmall {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacts,
+.adres {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.info {
+    display: flex;
 }
