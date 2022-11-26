@@ -14,21 +14,82 @@
     position: relative;
     border-radius: 10px;
     background-color: $color-light-link;
-    width: 675px;
+    width: 900px;
     min-height: 120px;
     max-height: 90%;
     overflow: auto;
     @include media-tablet {
-        width: 90%;
+        width: 630px;
+        height: 350px;
     }
 }
 
-.modal__close-icon {
-    position: absolute;
+.close-icon {
+    width: 12px;
     top: 30px;
     right: 26px;
     cursor: pointer;
+    background-image: url("../../../assets/images/cross.svg");
+    position: absolute;
+    height: 12px;
     svg {
         pointer-events: none;
+    }
+}
+
+.modal_desc {
+    width: 350px;
+    @include media-tablet {
+        width: 260px;
+        font-size: 1.3rem;
+    }
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: row;
+    @include media-mobilesmall {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.modal_image {
+    width: 500px;
+    padding-right: 30px;
+    @include media-tablet {
+        width: 350px;
+        height: 350px;
+    }
+    @include media-mobilesmall {
+        display: none;
+    }
+}
+
+.modal_li {
+    list-style-type: disc;
+}
+
+.modal_list {
+    font-size: 1.5rem;
+    @include media-tablet {
+        font-size: 1.3rem;
+    }
+}
+
+.modal_name {
+    @include media-tablet {
+        font-size: 3.2rem;
+    }
+    @include media-mobilesmall {
+        text-align: center;
+    }
+}
+
+.modal_type {
+    @include media-mobilesmall {
+        text-align: center;
     }
 }

@@ -69,7 +69,7 @@ h5 {
 
 .hamburger {
   display: none;
-  z-index: 3;
+  z-index: 1;
   width: 30px;
   height: 26px;
 }
@@ -232,7 +232,7 @@ h5 {
   position: relative;
   border-radius: 10px;
   background-color: #FAFAFA;
-  width: 675px;
+  width: 900px;
   min-height: 120px;
   max-height: 90%;
   overflow: auto;
@@ -240,19 +240,110 @@ h5 {
 
 @media (max-width: 768px) {
   .modal {
-    width: 90%;
+    width: 630px;
+    height: 350px;
   }
 }
 
-.modal__close-icon {
-  position: absolute;
+.close-icon {
+  width: 12px;
   top: 30px;
   right: 26px;
   cursor: pointer;
+  background-image: url("../../../assets/images/cross.svg");
+  position: absolute;
+  height: 12px;
 }
 
-.modal__close-icon svg {
+.close-icon svg {
   pointer-events: none;
+}
+
+.modal_desc {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .modal_desc {
+    width: 260px;
+    font-size: 1.3rem;
+  }
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 320px) {
+  .modal__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.modal_image {
+  width: 500px;
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .modal_image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal_image {
+    display: none;
+  }
+}
+
+.modal_li {
+  list-style-type: disc;
+}
+
+.modal_list {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .modal_list {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal_name {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal_name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal_type {
+    text-align: center;
+  }
 }
 
 .cozy-house {
