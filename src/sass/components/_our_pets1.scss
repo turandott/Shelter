@@ -1,4 +1,4 @@
-.our_friends {
+.pets {
     background-color: $color-background;
 }
 
@@ -19,7 +19,53 @@
 .pets_title {
     font-size: 3.5rem;
     padding: 80px 0 60px 0;
+    align-items: center;
     text-align: center;
     color: $color-dark-grey-text;
     font-family: Georgia, Times, serif;
+    @include media-mobile {
+        font-size: 2.5rem;
+        width: 300px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+}
+
+.cards_wrapper {
+    width: 1200px;
+    // width: 270px;
+    overflow: hidden;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-column-gap: 90px;
+    // display: flex;
+    align-items: center;
+    @include media-tablet {
+        width: 580px;
+        grid-column-gap: 40px;
+    }
+    @include media-mobilesmall {
+        width: 270px;
+    }
+}
+
+.card_slider {
+    // width: 270px;
+    left: 0;
+    display: flex;
+    grid-column-gap: 40px;
+    position: relative;
+    transition: all ease 1s;
+    @include media-tablet {
+        grid-column-gap: 40px;
+    }
+    @include media-mobilesmall {}
+}
+
+.cards_wrapper.active {
+    position: absolute;
+}
+
+.card_slider.active {
+    position: absolute;
 }

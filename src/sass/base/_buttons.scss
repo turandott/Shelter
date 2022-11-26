@@ -46,7 +46,18 @@
 }
 
 .b {
-    background-color: $color-peach;
+    // background-color: $color-peach;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-color: $color-peach-light;
+}
+
+.rows-left,
+.rows-right {
     width: 52px;
     height: 52px;
     display: flex;

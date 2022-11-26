@@ -9,7 +9,8 @@ function hamburgerMenu() {
     const hamburger = document.querySelector(".hamburger");
     const menu = document.querySelector(".header_list");
     const menuHeader = document.querySelector(".menu__body");
-
+    const card_z = document.querySelector(".cards_wrapper");
+    const slider_z = document.querySelector(".card_slider");
 
     hamburger.addEventListener("click", mobileMenu);
 
@@ -18,7 +19,8 @@ function hamburgerMenu() {
         menu.classList.toggle("active");
         menuHeader.classList.toggle("active");
         document.body.classList.toggle("_lock");
-        // headerWr.classList.toggle("active");
+        card_z.classList.toggle("active");
+        slider_z.classList.toggle("active");
     }
     const headerLink = document.querySelectorAll(".header_link");
 
@@ -29,6 +31,8 @@ function hamburgerMenu() {
         menu.classList.remove("active");
         menuHeader.classList.remove("active");
         document.body.classList.remove("_lock");
+        card_z.classList.remove("active");
+        slider_z.classList.remove("active");
 
     }
 }
@@ -279,9 +283,8 @@ window.onload = function() {
         // if (pets) {
         //     renderArticlesToDom();
         // }
-
-    AddCard();
     hamburgerMenu();
+    AddCard();
     window.addEventListener('resize', sliderPets);
     sliderPets();
     addToolsClickHandler();

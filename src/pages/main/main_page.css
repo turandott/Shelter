@@ -136,7 +136,23 @@ h5 {
 }
 
 .b {
-  background-color: #F1CDB3;
+  width: 52px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border-color: #FDDCC4;
+}
+
+.rows-left,
+.rows-right {
   width: 52px;
   height: 52px;
   display: -webkit-box;
@@ -164,7 +180,7 @@ h5 {
 
 .hamburger {
   display: none;
-  z-index: 1;
+  z-index: 3;
   width: 30px;
   height: 26px;
 }
@@ -641,44 +657,6 @@ h5 {
   letter-spacing: 0.06em;
   /* color-dark-3xl */
   color: #292929;
-}
-
-.cards_wrapper {
-  width: 990px;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 768px) {
-  .cards_wrapper {
-    width: 580px;
-    grid-column-gap: 40px;
-  }
-}
-
-@media (max-width: 320px) {
-  .cards_wrapper {
-    width: 270px;
-  }
-}
-
-.card_slider {
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-column-gap: 90px;
-  position: relative;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-}
-
-@media (max-width: 768px) {
-  .card_slider {
-    grid-column-gap: 40px;
-  }
 }
 
 .start_screen_content {
@@ -1215,6 +1193,44 @@ h5 {
 @media (max-width: 768px) {
   .rows-left {
     padding-left: 20px;
+  }
+}
+
+.cards_wrapper {
+  width: 990px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cards_wrapper {
+    width: 580px;
+    grid-column-gap: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards_wrapper {
+    width: 270px;
+  }
+}
+
+.card_slider {
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column-gap: 90px;
+  position: relative;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+@media (max-width: 768px) {
+  .card_slider {
+    grid-column-gap: 40px;
   }
 }
 /*# sourceMappingURL=main_page.css.map */

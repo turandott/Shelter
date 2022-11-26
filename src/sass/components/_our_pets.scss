@@ -26,3 +26,34 @@
         padding-left: 20px;
     }
 }
+
+.cards_wrapper {
+    width: 990px;
+    // width: 270px;
+    overflow: hidden;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-column-gap: 90px;
+    // display: flex;
+    align-items: center;
+    @include media-tablet {
+        width: 580px;
+        grid-column-gap: 40px;
+    }
+    @include media-mobilesmall {
+        width: 270px;
+    }
+}
+
+.card_slider {
+    // width: 270px;
+    left: 0;
+    display: flex;
+    grid-column-gap: 90px;
+    position: relative;
+    transition: all ease 1s;
+    @include media-tablet {
+        grid-column-gap: 40px;
+    }
+    @include media-mobilesmall {}
+}

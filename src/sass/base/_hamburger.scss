@@ -10,7 +10,7 @@
 
 .hamburger {
     display: none;
-    z-index: 1;
+    z-index: 3;
     // display: inline-block;
     width: 30px;
     height: 26px;
@@ -39,33 +39,4 @@
 .hamburger.active {
     rotate: 90deg;
     // transition: left 0.3s ease 0s;
-}
-
-// .close_icon {
-//     transform: rotate(-90deg);
-//     display: none;
-//     width: 30px;
-//     padding-bottom: 58px;
-//     @include media-mobile {
-//         // display: inline-block;
-//         // z-index: 100;
-//     }
-//     &:before {
-//         @extend %hamburger-line;
-//         top: 0;
-//         left: 0;
-//     }
-//     &:after {
-//         @extend %hamburger-line;
-//         bottom: 0;
-//         left: 0;
-//     }
-// }
-// .showMenu {
-//     transform: translateY(0);
-// }
-.header_list {
-    // position: fixed;
-    // transform: translateY(-100%);
-    // transition: transform 0.2s;
 }
