@@ -49,4 +49,7 @@
 .help_item {
     display: flex;
     flex-direction: column;
+    @include media-mobilesmall {
+        align-items: center;
+    }
 }

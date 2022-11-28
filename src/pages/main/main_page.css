@@ -1058,6 +1058,14 @@ h5 {
           flex-direction: column;
 }
 
+@media (max-width: 320px) {
+  .help_item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .help_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
